@@ -1,2 +1,2 @@
-# PersonalRepository
-Storing progress of self learn c++
+# RockPaperScissors
+literally

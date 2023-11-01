@@ -20,32 +20,47 @@ int main() {
         cin >> myThrow;
         cout << endl;
 
-        if (myThrow == rock) {
+        if (myThrow == rock)
+        {
             cout << "You choose rock! " << endl;
-        } else if (myThrow == paper) {
+        } 
+        else if (myThrow == paper)
+        {
             cout << "You choose paper! " << endl;
-        } else if (myThrow == scissors) {
+        } 
+        else if (myThrow == scissors) 
+        {
             cout << "You choose scissors! " << endl;
         }
 
         aiThrow = (rand() % 3) + 1;
 
-        if (aiThrow == rock) {
+        if (aiThrow == rock) 
+        {
             cout << "AI choose rock!" << endl;
-        } else if (aiThrow == paper) {
+        } 
+        else if (aiThrow == paper) 
+        {
             cout << "AI choose paper!" << endl;
-        } else if (aiThrow == scissors) {
+        }
+        else if (aiThrow == scissors) 
+        {
             cout << "AI choose scissors!" << endl;
         }
         cout << endl;
         draw = false;
 
-        if (myThrow == aiThrow) {
+        if (myThrow == aiThrow)
+        {
             draw = true;
             cout << "It's a draw! Let's play again.^^" << endl;
-        } else if (myThrow == rock && aiThrow == scissors) {
+        } 
+        else if (myThrow == rock && aiThrow == scissors)
+        {
             cout << "You win!" << endl;
-        } else if (myThrow == rock && aiThrow == paper) {
+        } 
+        else if (myThrow == rock && aiThrow == paper) 
+        {
             cout << "You lose..." << endl;
             cout << "Do you want to play again? 1 if yes." << endl;
             cin >> again;
@@ -53,10 +68,13 @@ int main() {
             {
                 draw = true;
             }
-
-        } else if (myThrow == paper && aiThrow == rock) {
+        } 
+        else if (myThrow == paper && aiThrow == rock) 
+        {
             cout << "You win!!" << endl;
-        } else if (myThrow == paper && aiThrow == scissors) {
+        } 
+        else if (myThrow == paper && aiThrow == scissors) 
+        {
             cout << "You lose..." << endl;
             cout << "Do you want to play again? 1 if yes." << endl;
             cin >> again;
@@ -64,7 +82,9 @@ int main() {
             {
                 draw = true;
             }
-        } else if (myThrow == scissors && aiThrow == rock) {
+        } 
+        else if (myThrow == scissors && aiThrow == rock)
+        {
             cout << "You lose..." << endl;
             cout << "Do you want to play again? 1 if yes." << endl;
             cin >> again;
@@ -72,10 +92,12 @@ int main() {
             {
                 draw = true;
             }
-        } else if (myThrow == scissors && aiThrow == paper) {
+        } 
+        else if (myThrow == scissors && aiThrow == paper)
+        {
             cout << "You win!!" << endl;
-
         }
+        
     } while (draw);
 
 
